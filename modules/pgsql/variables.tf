@@ -14,7 +14,7 @@ variable "pgsql_sku_name" {
   default     = "GP_Standard_D2s_v3"
 
   validation {
-    condition     = contains(["B_Standard_B1ms", "GP_Standard_D2s_v3", "MO_Standard_E4s_v3"], var.pgsql_sku_name)
+    condition     = contains(["B_Standard_B8ms", "GP_Standard_D2s_v3", "MO_Standard_E4s_v3"], var.pgsql_sku_name)
     error_message = "The value of the sku name property of the PostgreSQL is invalid."
   }
 }
